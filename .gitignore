@@ -1,0 +1,8 @@
+# mac file
+.DS_STORE
+
+# tool
+node_modules
+
+# environment
+.env
