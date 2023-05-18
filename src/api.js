@@ -26,6 +26,8 @@ async function authUser(name, password) {
 }
 
 app.get('/heroes', async (req, res) => {
+    // Authenticated information is in the headers.
+    // If name and password don't exist in header, return base data.    
     if (!req.headers.name || !req.headers.password) {
         const heroesResponse = await axios.get(dataSourceRootUrl + 'heroes');
         res.json({ heroes: heroesResponse.data });
@@ -69,6 +71,8 @@ app.get('/heroes', async (req, res) => {
 app.get('/heroes/:heroId', async (req, res) => {
     const { heroId } = req.params;
 
+    // Authenticated information is in the headers.
+    // If name and password don't exist in header, return base data.
     if (!req.headers.name || !req.headers.password) {
         const heroesResponse = await axios.get(dataSourceRootUrl + `heroes/${heroId}`);
         res.json(heroesResponse.data);
