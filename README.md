@@ -1,5 +1,5 @@
-# API Server Assignment
-This is a simple API server with Node.js.
+# Oh My Hero
+This is a simple API server assignment with Node.js.
 
 ## Requirements
  - [nvm](https://github.com/nvm-sh/nvm) 0.39.3+
