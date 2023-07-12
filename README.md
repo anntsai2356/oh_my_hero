@@ -1,4 +1,5 @@
-# Hahow backend recruitment
+# API Server Assignment
+This is a simple API server with Node.js.
 
 ## Requirements
  - [nvm](https://github.com/nvm-sh/nvm) 0.39.3+
